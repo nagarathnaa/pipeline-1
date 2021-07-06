@@ -1,8 +1,8 @@
 # Maven
 task: 
 Maven@3
-inputs
-mavenPomFile: 'MyWebApp/pom.xml'
+inputs:
+    mavenPomFile: 'MyWebApp/pom.xml'
     goals: 'clean install sonar:sonar'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
