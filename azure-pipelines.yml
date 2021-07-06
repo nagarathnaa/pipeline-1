@@ -1,8 +1,6 @@
 # Maven
-- task: SonarQubePrepare@4
-  inputs:
-    scannerMode: 'MSBuild'
- task: Maven@3
+task: 
+Maven@3
   inputs:
     mavenPomFile: 'MyWebApp/pom.xml'
     goals: 'clean install sonar:sonar'
